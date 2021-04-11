@@ -14,11 +14,20 @@ buildingsPerm = randperm(size(buildings, 1), numSamples);
 sidewalkPerm = randperm(size(sidewalk, 1), numSamples);
 yellowCurbPerm = randperm(size(yellowCurb, 1), numSamples);
 clothPanelsPerm = randperm(size(clothPanels, 1), numSamples);
+figure();
 plot(wv, trees(treePerm(1), :)', 'Color', '#06470c', 'LineWidth', width);
 hold on;
 plot(wv, mostlyGrass(mostlyGrassPerm(1), :)', 'Color', '#89fe05', 'LineWidth', width);
-plot(wv, mixedGround(mixedGroundPerm(1), :)', 'Color', '#13eac9', 'LineWidth', width);
+plot(wv, trees(treePerm(1:10), :)', 'Color', '#06470c', 'LineWidth', width);
+plot(wv, mostlyGrass(mostlyGrassPerm(1:10), :)', 'Color', '#89fe05', 'LineWidth', width);
+hold off;
+legend({'Trees', 'Mostly Grass'}, 'Location', 'NorthWest')
+title('Training MUUFL Data')
+xlabel('Wavelength (nm)')
+ylabel('Reflectance')
+figure();
 plot(wv, dirtSand(dirtSandPerm(1), :)', 'Color', '#ceb301', 'LineWidth', width);
+hold on;
 plot(wv, road(roadPerm(1), :)', 'Color', '#000000', 'LineWidth', width);
 plot(wv, water(waterPerm(1), :)', 'Color', '#0343df', 'LineWidth', width);
 plot(wv, buildingShadow(buildingShadowPerm(1), :)', 'Color', '#9a0eea', 'LineWidth', width);
@@ -26,9 +35,6 @@ plot(wv, buildings(buildingsPerm(1), :)', 'Color', '#ffd1df', 'LineWidth', width
 plot(wv, sidewalk(sidewalkPerm(1), :)', 'Color', '#653700', 'LineWidth', width);
 plot(wv, yellowCurb(yellowCurbPerm(1), :)', 'Color', '#ffff14', 'LineWidth', width);
 plot(wv, clothPanels(clothPanelsPerm(1), :)', 'Color', '#c20078', 'LineWidth', width);
-plot(wv, trees(treePerm(1:10), :)', 'Color', '#06470c', 'LineWidth', width);
-plot(wv, mostlyGrass(mostlyGrassPerm(1:10), :)', 'Color', '#89fe05', 'LineWidth', width);
-plot(wv, mixedGround(mixedGroundPerm(1:10), :)', 'Color', '#13eac9', 'LineWidth', width);
 plot(wv, dirtSand(dirtSandPerm(1:10), :)', 'Color', '#ceb301', 'LineWidth', width);
 plot(wv, road(roadPerm(1:10), :)', 'Color', '#000000', 'LineWidth', width);
 plot(wv, water(waterPerm(1:10), :)', 'Color', '#0343df', 'LineWidth', width);
@@ -38,7 +44,7 @@ plot(wv, sidewalk(sidewalkPerm(1:10), :)', 'Color', '#653700', 'LineWidth', widt
 plot(wv, yellowCurb(yellowCurbPerm(1:10), :)', 'Color', '#ffff14', 'LineWidth', width);
 plot(wv, clothPanels(clothPanelsPerm(1:10), :)', 'Color', '#c20078', 'LineWidth', width);
 hold off;
-legend({'Trees', 'Mostly Grass', 'Mixed Ground', 'Dirt/Sand', 'Road', 'Water', 'Building Shadow', 'Buildings', 'Sidewalk', 'Yellow Curb', 'Cloth Panels'}, 'Location', 'NorthWest')
-title('MUUFL Data')
+legend({'Dirt/Sand', 'Road', 'Water', 'Building Shadow', 'Buildings', 'Sidewalk', 'Yellow Curb', 'Cloth Panels'}, 'Location', 'NorthWest')
+title('Outlier MUUFL Data')
 xlabel('Wavelength (nm)')
 ylabel('Reflectance')
