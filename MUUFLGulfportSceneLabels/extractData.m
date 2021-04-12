@@ -53,3 +53,5 @@ clothPanels = zeros(length(hsi.sceneLabels.Materials_rowIndices{materialIndex}),
 for i = 1:size(clothPanels, 1)
 clothPanels(i, :) = hsi.Data(hsi.sceneLabels.Materials_rowIndices{materialIndex}(i), hsi.sceneLabels.Materials_colIndices{materialIndex}(i), :);
 end
+
+wv = hsi.info.wavelength;

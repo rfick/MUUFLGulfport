@@ -1,29 +1,29 @@
-treesDists = spectralAngle(trees, muuflsomweights);
-avgTrees = mean(treesDists, 1);
+treesAngles = spectralAngle(trees, muuflsomweights);
+avgAngleTrees = mean(treesAngles, 1);
 
-mostlyGrassDists = spectralAngle(mostlyGrass, muuflsomweights);
-avgGrass = mean(mostlyGrassDists, 1);
+mostlyGrassAngles = spectralAngle(mostlyGrass, muuflsomweights);
+avgAngleGrass = mean(mostlyGrassAngles, 1);
 
-dirtSandDists = spectralAngle(dirtSand, muuflsomweights);
-avgDirtSand = mean(dirtSandDists, 1);
+dirtSandAngles = spectralAngle(dirtSand, muuflsomweights);
+avgAngleDirtSand = mean(dirtSandAngles, 1);
 
-roadDists = spectralAngle(road, muuflsomweights);
-avgRoad = mean(roadDists, 1);
+roadAngles = spectralAngle(road, muuflsomweights);
+avgAngleRoad = mean(roadAngles, 1);
 
-waterDists = spectralAngle(water, muuflsomweights);
-avgWater = mean(waterDists, 1);
+waterAngles = spectralAngle(water, muuflsomweights);
+avgAngleWater = mean(waterAngles, 1);
 
-buildingShadowDists = spectralAngle(buildingShadow, muuflsomweights);
-avgBuildingShadow = mean(buildingShadowDists, 1);
+buildingShadowAngles = spectralAngle(buildingShadow, muuflsomweights);
+avgAngleBuildingShadow = mean(buildingShadowAngles, 1);
 
-buildingsDists = spectralAngle(buildings, muuflsomweights);
-avgBuildings = mean(buildingsDists, 1);
+buildingsAngles = spectralAngle(buildings, muuflsomweights);
+avgAngleBuildings = mean(buildingsAngles, 1);
 
-sidewalkDists = spectralAngle(sidewalk, muuflsomweights);
-avgSidewalk = mean(sidewalkDists, 1);
+sidewalkAngles = spectralAngle(sidewalk, muuflsomweights);
+avgAngleSidewalk = mean(sidewalkAngles, 1);
 
-yellowCurbDists = spectralAngle(yellowCurb, muuflsomweights);
-avgYellowCurb = mean(yellowCurbDists, 1);
+yellowCurbAngles = spectralAngle(yellowCurb, muuflsomweights);
+avgAngleYellowCurb = mean(yellowCurbAngles, 1);
 
-clothPanelsDists = spectralAngle(clothPanels, muuflsomweights);
-avgClothPanels = mean(clothPanelsDists, 1);
+clothPanelsAngles = spectralAngle(clothPanels, muuflsomweights);
+avgAngleClothPanels = mean(clothPanelsAngles, 1);
