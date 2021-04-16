@@ -1,4 +1,4 @@
-avgTotalDists = zeros(10, 16);
+avgTotalDists = zeros(10, size(muuflsomweights, 1));
 avgTotalDists(1, :) = avgTotalDistGrass;
 avgTotalDists(2, :) = avgTotalDistTrees;
 avgTotalDists(3, :) = avgTotalDistBuildings;

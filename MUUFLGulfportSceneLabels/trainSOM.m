@@ -7,7 +7,7 @@ sampleMostlyGrass = mostlyGrass(randsample(size(mostlyGrass, 1), 1400), :);
 %somdata = [sampleTree; sampleMostlyGrass; sampleMixedGround; sampleDirtSand; sampleBuildings; sampleSidewalks];
 somdata = [sampleTree; sampleMostlyGrass];
 %plot(somdata')
-dimensions = [4 4];
+dimensions = [10 10];
 coverSteps = 100;
 initNeighbor = 3;
 topologyFcn = 'gridtop';
